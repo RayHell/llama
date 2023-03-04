@@ -1,5 +1,12 @@
 
-## Windows user
+
+# LLaMA 
+
+This repository is intended as a minimal, hackable and readable example to load [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) ([arXiv](https://arxiv.org/abs/2302.13971v1)) models and run inference.
+In order to download the checkpoints and tokenizer, fill this [google form](https://forms.gle/jk851eBVbX1m5TAv5)
+
+
+## Setup Windows user
 
 For windows user you will need to clone this repository in a WSL environement. You might have to turn on Virtualisation in the BIOS
 
@@ -11,15 +18,10 @@ wsl --install
 start wsl
 wsl -d Ubuntu
 ```
-
 Install Cuda in wsl
 https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local
 
-
-# LLaMA 
-
-This repository is intended as a minimal, hackable and readable example to load [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) ([arXiv](https://arxiv.org/abs/2302.13971v1)) models and run inference.
-In order to download the checkpoints and tokenizer, fill this [google form](https://forms.gle/jk851eBVbX1m5TAv5)
+Once this is done clone the repos in wls
 
 
 ## Setup
@@ -32,12 +34,13 @@ Then
 ```
 pip install -e .
 ```
+```
 pip install gradio
 ```
 You will need create a folder celled "models " in the root of this app on put tokenizer_checklist.ch, tokenizer.model and 7B folder inside
 
 To start ths app type
-
+```
 ./run.sh
 ```
 
